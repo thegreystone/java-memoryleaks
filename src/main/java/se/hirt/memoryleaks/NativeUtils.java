@@ -15,6 +15,9 @@ public class NativeUtils {
 		String osArch = System.getProperty("os.arch").toLowerCase();
 		String libExtension = osName.contains("win") ? ".dll" : osName.contains("mac") ? ".dylib" : ".so";
 		String libFullName = libraryName + libExtension;
+		if (osName.contains("mac")) {
+			libFullName = "lib" + libFullName;
+		}
 
 		Logger.getLogger(NativeUtils.class.getName()).log(Level.INFO, "Attempting to load library " + libFullName + " from jar");
 
