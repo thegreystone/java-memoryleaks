@@ -15,3 +15,6 @@
 # Ensure Maven wrapper scripts retain their original line endings
 mvnw text eol=lf
 mvnw.cmd
+
+# Don't add jfr recordings willy nilly
+*.jfr
