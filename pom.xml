@@ -20,7 +20,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>se.hirt.memoryleaks.Main</mainClass>
+							<mainClass>se.hirt.memoryleaks.RunLeak</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -84,7 +84,7 @@
 					<appendAssemblyId>false</appendAssemblyId>
 					<archive>
 						<manifest>
-							<mainClass>se.hirt.memoryleaks.Main</mainClass>
+							<mainClass>se.hirt.memoryleaks.RunLeak</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

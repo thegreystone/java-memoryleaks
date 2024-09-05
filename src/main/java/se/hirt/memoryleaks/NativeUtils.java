@@ -18,7 +18,7 @@ public class NativeUtils {
 
 		Logger.getLogger(NativeUtils.class.getName()).log(Level.INFO, "Attempting to load library " + libFullName + " from jar");
 
-		try (InputStream in = Main.class.getResourceAsStream("/" + libFullName)) {
+		try (InputStream in = RunLeak.class.getResourceAsStream("/" + libFullName)) {
 			if (in == null) {
 				Logger.getLogger(NativeUtils.class.getName()).log(Level.SEVERE, "Could not find library " + libFullName + " in the jar");
 				throw new RuntimeException("Library " + libFullName + " not found in JAR");
