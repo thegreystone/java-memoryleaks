@@ -7,8 +7,11 @@ import java.util.logging.Logger;
 public class NativeUtils {
 	/**
 	 * Convenience method to make it possible to load native libraries that exist in a jar.
-	 * @param libraryName the name of the library to load.
-	 * @throws IOException if there was a problem writing the library out to temp from the jar, or reading it back again.
+	 *
+	 * @param libraryName
+	 * 		the name of the library to load.
+	 * @throws IOException
+	 * 		if there was a problem writing the library out to temp from the jar, or reading it back again.
 	 */
 	public static void loadLibraryFromJar(String libraryName) throws IOException {
 		String osName = System.getProperty("os.name").toLowerCase();
@@ -44,6 +47,7 @@ public class NativeUtils {
 
 	/**
 	 * Will first attempt to load the library from the library path, then attempt to load it from within the jar.
+	 *
 	 * @param libraryName
 	 */
 	public static void loadLibrary(String libraryName) {
