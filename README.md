@@ -8,6 +8,12 @@ The project can simulate various different kinds of leaks that can occur in a Ja
 native memory leaks. It contains a native library to cause these leaks, and for this to properly build, a c compiler
 must be set up. How to do this varies with the platform.
 
+On Windows, with Visual Studio installed, you can set the proper path by running:
+
+```bat
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"   
+```
+
 Once everything is properly setup, it should be possible to build it using:
 
 ```bash
