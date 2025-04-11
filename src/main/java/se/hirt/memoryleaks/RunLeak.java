@@ -1,7 +1,8 @@
 package se.hirt.memoryleaks;
 
 public class RunLeak {
-	private final static String LIBRARY_NAME = "memleak";
+	private final static String LIBRARY_NAME = System.getProperty("os.name").toLowerCase().contains("win")
+			? "memleak" : "libmemleak";
 
 	static {
 		NativeUtils.loadLibrary(LIBRARY_NAME);
